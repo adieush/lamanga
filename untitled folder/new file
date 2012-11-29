@@ -1,0 +1,2 @@
+sudo cp -r /home/quickstart/Desktop/vbox-shared/php/* /usr/share/php
+
