@@ -1,0 +1,4 @@
+name = "Lamanga login"
+description = "Disable login from front page and creates a specific page for login admin"
+core = 7.x
+package = Custom

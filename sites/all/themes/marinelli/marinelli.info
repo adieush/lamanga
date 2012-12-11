@@ -1,4 +1,4 @@
-name = Marinelli
+name = La manga
 description = A clean theme still usable over 4000m!
 core = 7.x
 engine = phptemplate
@@ -9,7 +9,7 @@ stylesheets[all][] = css/links.css
 stylesheets[all][] = css/typography.css
 stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/drupal.css
-stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/layout_lamanga.css
 stylesheets[all][] = css/primary-links.css
 stylesheets[all][] = css/slideshow.css
 stylesheets[all][] = css/secondary-links.css

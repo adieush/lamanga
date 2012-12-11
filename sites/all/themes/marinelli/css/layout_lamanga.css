@@ -1,0 +1,99 @@
+/* 
+    Document   : style
+    Created on : Nov 29, 2012, 7:42:29 PM
+    Author     : 1
+    Description:
+        Purpose of the stylesheet follows.
+*/
+* {
+  margin: 0;
+}
+html, body {
+	width:100%;
+	height:100%;
+}
+body {
+  background-color: #101010;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color: #f8f2e5;
+}
+p {
+  font-size: 12px;
+}
+a {
+  color: #f8f2e5;
+  text-decoration: none;
+}
+root { 
+  display: block;
+}
+header {
+  background-image: url("/lamanga/img/la_manga_header.png");
+  height: 172px;
+}
+.lamanga-logo {
+  background-image: url('/lamanga/img/la-manga_logo.png');
+  width: 358px;
+  height: 120px;
+  float: left;
+  position: relative;
+  top: 29px;
+  left: 29px;
+}
+.wrap {
+  height:auto !important;
+/*  height:100%;*/
+  min-height:100%;
+  width: 1023px;
+  margin: 0 auto;
+/*  margin-bottom: 150px;*/
+  position:relative;
+  background-color: #290c10;
+  overflow: auto;
+}
+.left-sidebar {
+  border: solid white 1px;
+  width: 185px;
+  float: left;
+}
+.center-content {
+  width: 617px;
+  float: left;
+  margin-left: 6px;
+  margin-bottom: 55px;
+  background-color: #7b3a37;
+  padding: 10px;
+/*  padding-right: 10px;*/
+}
+.right-sidebar {
+  width: 185px;
+  float: right;
+  text-align: center;
+}
+.lamanga-map {
+  width: 120px;
+  height: 200px;
+  display: inline-block;
+}
+.lamanga-map-icon {
+  width: 120px;
+  height: 180px;
+  background-image: url('/lamanga/img/lamanga_map.png');
+  display: inline-block;
+}
+.empty {
+  height:30px; /* равняется высоте футера */
+}
+.footer {
+  height: 30px;
+  width: 1023px;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #7b3a37;
+}
+.footer p {
+  text-align: center;
+  padding-top: 9px;
+}

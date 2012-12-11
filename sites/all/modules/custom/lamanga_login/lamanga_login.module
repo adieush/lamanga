@@ -1,0 +1,27 @@
+<?php
+
+/*
+ * @file This module is created for prepaid project
+ * 
+ */
+
+/*
+ * Implement hook_menu
+ */
+function lamanga_login_menu() {
+
+  $items['login'] = array(
+    'title' => t('The Wonga.com prepaid MasterCard'),
+    'menu_name' => 'primary-links',
+    'type' => MENU_CALLBACK,
+    'page callback' => 'lamanga_login',
+    'access arguments' => array('access content'),
+    'weight' => 1,
+  );
+
+  return $items;
+}
+
+function lamanga_login() {
+  return "hello";
+}
