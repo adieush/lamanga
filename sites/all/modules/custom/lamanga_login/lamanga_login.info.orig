@@ -1,0 +1,4 @@
+name = Lamanga login
+description = Allows login as administrator.
+package = Lamanga
+core = 7.x

@@ -1,0 +1,25 @@
+<?php
+
+/*
+ * Implement hook_menu
+ */
+function lamanga_login_menu() {
+  $items = array();
+  $items['login'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => 'lamanga_login_page',
+//    'page arguments' => array('user_login'),
+    'access arguments' => array('access content'),
+  );
+  return $items;
+}
+
+/**
+ * @return string 
+ * Implement login page
+ */
+function lamanga_login_page() {
+  $r = 'hello';
+  var_dump($user);
+  return $r;
+}

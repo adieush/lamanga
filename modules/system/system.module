@@ -2041,11 +2041,6 @@ function system_block_info() {
     'status' => 1,
     'region' => 'content',
   );
-  $blocks['powered-by'] = array(
-    'info' => t('Powered by Drupal'),
-    'weight' => '10',
-    'cache' => DRUPAL_NO_CACHE,
-  );
   $blocks['help'] = array(
     'info' => t('System help'),
     'weight' => '5',
@@ -2076,10 +2071,6 @@ function system_block_view($delta = '') {
     case 'main':
       $block['subject'] = NULL;
       $block['content'] = drupal_set_page_content();
-      return $block;
-    case 'powered-by':
-      $block['subject'] = NULL;
-      $block['content'] = theme('system_powered_by');
       return $block;
     case 'help':
       $block['subject'] = NULL;
@@ -3365,15 +3356,6 @@ function system_timezone($abbreviation = '', $offset = -1, $is_daylight_saving_t
   $abbreviation = $abbreviation ? $abbreviation : '';
   $timezone = timezone_name_from_abbr($abbreviation, intval($offset), $is_daylight_saving_time);
   drupal_json_output($timezone);
-}
-
-/**
- * Returns HTML for the Powered by Drupal text.
- *
- * @ingroup themeable
- */
-function theme_system_powered_by() {
-  return '<span>' . t('Powered by <a href="@poweredby">Drupal</a>', array('@poweredby' => 'http://drupal.org')) . '</span>';
 }
 
 /**
